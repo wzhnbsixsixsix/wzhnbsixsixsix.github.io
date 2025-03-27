@@ -1558,6 +1558,44 @@ footer {
     color: #000
 }
 
+
+
+
+
+.social-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* 隐藏二维码 */
+  .qr-code {
+    display: none;
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* 悬停时显示二维码 */
+  .social-container:hover .qr-code {
+    display: block;
+  }
+
+  .social-icon {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
 @media screen and (max-width:1920px) {
     html {
         font-size: 60%
@@ -1594,6 +1632,9 @@ footer {
         transition-duration: 1s
     }
 }
+
+
+
 
 @media screen and (max-width:1150px) {
     html {
